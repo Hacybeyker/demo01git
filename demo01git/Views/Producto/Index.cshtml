@@ -1,0 +1,19 @@
+﻿@model demo01git.Models.Producto
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Producto</h2>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.nombre)
+    @Html.TextBoxFor(m => m.nombre)
+
+    @Html.LabelFor(m => m.descripcion)
+    @Html.TextBoxFor(m => m.descripcion)
+
+    @Html.LabelFor(m => m.precio)
+    @Html.TextBoxFor(m => m.precio)
+}
+
